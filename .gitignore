@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+
+
+# Virtual environment
+sele/
+
+# Data & output files
+data/
+
+
