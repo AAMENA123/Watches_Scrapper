@@ -5,6 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 import pandas as pd
+import re
+
 
 
 product =[]
@@ -20,12 +22,15 @@ for file in os.listdir("data"):
     price = t.get_text()
     brand = b.get_text()       
     availability = "In Stock"
-    product.append({
-    "Watch Name": title,
-    "Brand": brand,
-    "Price": price,
-    "Availability": availability,
-    })
+    price = re.sub(r"[^\d]", "", price)
+    if int(price) <2000:    
+        product.append({
+        "Watch Name": title,
+        "Brand": brand,
+        "Price": price,
+        "Availability": availability,
+        })
+        
 df = pd.DataFrame(product)
 df.to_excel("amazon_watches.xlsx", index=False)
 
