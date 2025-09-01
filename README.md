@@ -18,8 +18,8 @@ Follow these steps to set up and run the script locally.
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/harshkrishnani/watch-scraper-project.git](https://github.com/harshkrishnani/watch-scraper-project.git)
-    cd watch-scraper-project
+    git clone [https://github.com/AAMENA123/Watches_Scrapper/edit/main/README.md](https://github.com/AAMENA123/Watches_Scrapper/edit/main/README.md)
+    cd Watches_Scrapper
     ```
 
 2.  Create and activate a virtual environment:
@@ -36,7 +36,7 @@ Follow these steps to set up and run the script locally.
 
 3.  Install the required dependencies:
     ```bash
-    pip install requests beautifulsoup4 pandas openpyxl
+    pip install selenium beautifulsoup4 pandas openpyxl
     ```
 
 ## How to Run the Scraper
@@ -44,4 +44,6 @@ Follow these steps to set up and run the script locally.
 To run the script and generate the Excel file, execute the following command in your terminal:
 
 ```bash
-python scraper.py
+first run the commmand : python project.py
+then run python collect.py
+
